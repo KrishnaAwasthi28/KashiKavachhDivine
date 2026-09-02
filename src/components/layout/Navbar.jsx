@@ -69,7 +69,7 @@ export default function Navbar({ onCartOpen }) {
               </span>
 
               <span className="lg:hidden flex">
-                <FullLogo size={30} />
+                <FullLogo size={26} />
               </span>
             </Link>
 
@@ -192,7 +192,7 @@ export default function Navbar({ onCartOpen }) {
                   aria-label="Kashi Kavach Divine — Home"
                   className="flex items-center"
                 >
-                  <FullLogo size={32} />
+                  <BrandMark size={30} />
                 </Link>
 
                 <button
