@@ -59,15 +59,17 @@ export default function Navbar({ onCartOpen }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link to="/" aria-label="Kashi Kavach Divine — Home">
-              {/* Mobile */}
-              <span className="md:hidden">
-                <FullLogo size={38} />
+            <Link
+              to="/"
+              aria-label="Kashi Kavach Divine — Home"
+              className="flex-shrink-0"
+            >
+              <span className="hidden lg:flex">
+                <FullLogo size={50} />
               </span>
 
-              {/* Desktop */}
-              <span className="hidden md:flex">
-                <FullLogo size={50} />
+              <span className="lg:hidden flex">
+                <FullLogo size={30} />
               </span>
             </Link>
 
