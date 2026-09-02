@@ -64,12 +64,14 @@ export default function Navbar({ onCartOpen }) {
               aria-label="Kashi Kavach Divine — Home"
               className="flex-shrink-0"
             >
+              {/* Desktop Logo */}
               <span className="hidden lg:flex">
                 <FullLogo size={50} />
               </span>
 
+              {/* Mobile Logo */}
               <span className="lg:hidden flex">
-                <FullLogo size={26} />
+                <FullLogo size={30} variant="small" />
               </span>
             </Link>
 
