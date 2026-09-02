@@ -66,7 +66,7 @@ export default function Navbar({ onCartOpen }) {
               </span>
 
               <span className="md:hidden">
-                <BrandMark size={100} />
+                <BrandMark size={40} />
               </span>
             </Link>
 
