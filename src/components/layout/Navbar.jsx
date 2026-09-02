@@ -58,7 +58,6 @@ export default function Navbar({ onCartOpen }) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-
             {/* Logo */}
             <Link to="/" aria-label="Kashi Kavach Divine — Home">
               <span className="hidden md:flex">
@@ -105,7 +104,6 @@ export default function Navbar({ onCartOpen }) {
 
             {/* Actions */}
             <div className="flex items-center gap-1.5">
-
               {/* Search */}
               <button
                 className="p-2 text-[#c5a028] hover:text-[#e8dac6] transition-colors duration-300"
@@ -153,7 +151,6 @@ export default function Navbar({ onCartOpen }) {
               >
                 <Menu size={23} strokeWidth={1.8} />
               </button>
-
             </div>
           </div>
         </div>
@@ -186,7 +183,15 @@ export default function Navbar({ onCartOpen }) {
             >
               {/* Mobile Header */}
               <div className="flex items-center justify-between px-6 py-5 border-b border-[#1d1a12]">
-                <FullLogo size={30} />
+                <Link to="/" aria-label="Kashi Kavach Divine — Home">
+                  <span className="hidden md:flex">
+                    <FullLogo size={30} />
+                  </span>
+
+                  <span className="md:hidden">
+                    <BrandMark size={20} />
+                  </span>
+                </Link>
 
                 <button
                   onClick={() => setMobileOpen(false)}
