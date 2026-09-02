@@ -30,7 +30,7 @@ export default function About() {
       <section className="relative min-h-[65vh] flex items-center overflow-hidden pt-16 lg:pt-20">
         <div className="absolute inset-0">
           <img
-            src="our-story.png"
+            src="/our-story.png"
             alt="Kashi from the Ganga"
             className="w-full h-full object-cover scale-105"
           />

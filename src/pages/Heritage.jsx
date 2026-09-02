@@ -62,7 +62,7 @@ export default function Heritage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="heritage.png"
+            src="/heritage.png"
             alt="Sacred heritage and ancient traditions of Kashi"
             className="
               w-full

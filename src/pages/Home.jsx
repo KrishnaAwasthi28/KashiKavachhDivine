@@ -70,7 +70,7 @@ export default function Home() {
         {/* Parallax background */}
         <motion.div className="absolute inset-0" style={{ y: heroImgY }}>
           <img
-            src="kashi-kavach-hero-image.png"
+            src="/kashi-kavach-hero-image.png"
             alt="Sacred Kashi illuminated at night"
             className="w-full h-full object-cover scale-110"
           />
@@ -322,7 +322,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="our-story.png"
+            src="/our-story.png"
             alt="The sacred Ganga at sunset in Varanasi"
             className="
         w-full h-full

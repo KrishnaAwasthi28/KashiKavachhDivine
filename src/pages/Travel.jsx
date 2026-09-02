@@ -26,7 +26,7 @@ export default function Travel() {
       <section className="relative h-[62vh] min-h-[420px] flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="sacred-experience.jpg"
+            src="/sacred-experience.jpg"
             alt="Sacred Kashi at night — boats on the Ganga"
             className="w-full h-full object-cover"
           />
