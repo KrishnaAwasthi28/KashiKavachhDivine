@@ -211,11 +211,12 @@ export default function Home() {
         <div className="absolute top-0 left-1/4 w-1/2 h-px bg-gradient-to-r from-transparent via-[#c5a028]/50 to-transparent" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-11">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+          {/* Responsive Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
             {trust.map((item, i) => (
               <motion.div
                 key={item.label}
-                className="group flex items-center gap-4"
+                className="group flex items-center gap-4 min-w-0"
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -230,12 +231,12 @@ export default function Home() {
                 </div>
 
                 {/* Text */}
-                <div>
-                  <p className="text-[14px] font-cinzel text-[#dccfb8] tracking-wide mb-1 uppercase">
+                <div className="min-w-0">
+                  <p className="text-[14px] font-cinzel text-[#dccfb8] tracking-wide mb-1 uppercase break-words">
                     {item.label}
                   </p>
 
-                  <p className="text-[12px] text-[#897c68] font-sans leading-relaxed">
+                  <p className="text-[12px] text-[#897c68] font-sans leading-relaxed break-words">
                     {item.desc}
                   </p>
                 </div>
