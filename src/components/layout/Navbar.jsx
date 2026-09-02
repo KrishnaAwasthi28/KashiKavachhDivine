@@ -60,12 +60,14 @@ export default function Navbar({ onCartOpen }) {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <Link to="/" aria-label="Kashi Kavach Divine — Home">
-              <span className="hidden md:flex">
-                <FullLogo size={50} />
+              {/* Mobile */}
+              <span className="md:hidden">
+                <FullLogo size={38} />
               </span>
 
-              <span className="md:hidden">
-                <BrandMark size={40} />
+              {/* Desktop */}
+              <span className="hidden md:flex">
+                <FullLogo size={50} />
               </span>
             </Link>
 
@@ -183,14 +185,12 @@ export default function Navbar({ onCartOpen }) {
             >
               {/* Mobile Header */}
               <div className="flex items-center justify-between px-6 py-5 border-b border-[#1d1a12]">
-                <Link to="/" aria-label="Kashi Kavach Divine — Home">
-                  <span className="hidden md:flex">
-                    <FullLogo size={30} />
-                  </span>
-
-                  <span className="md:hidden">
-                    <BrandMark size={20} />
-                  </span>
+                <Link
+                  to="/"
+                  aria-label="Kashi Kavach Divine — Home"
+                  className="flex items-center"
+                >
+                  <FullLogo size={32} />
                 </Link>
 
                 <button
