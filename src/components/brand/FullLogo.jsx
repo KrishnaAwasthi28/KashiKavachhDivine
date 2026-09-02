@@ -1,6 +1,6 @@
 import BrandMark from './BrandMark';
 
-export default function FullLogo({ size = 60, className = '' }) {
+export default function FullLogo({ size = '60', className = '' }) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <BrandMark size={size} />

@@ -186,7 +186,7 @@ export default function Navbar({ onCartOpen }) {
             >
               {/* Mobile Header */}
               <div className="flex items-center justify-between px-6 py-5 border-b border-[#1d1a12]">
-                <BrandMark size={34} />
+                <FullLogo size={30} />
 
                 <button
                   onClick={() => setMobileOpen(false)}
